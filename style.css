@@ -1,0 +1,165 @@
+*{
+    background-color: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 5%;
+}
+
+.containerMensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+}
+
+.btn-ok {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: #28a745; /* Color verde */
+    border: 1px solid #28a745;
+    pmargin-top:8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-ok:hover {
+    background-color: #218838; /* Verde más oscuro al hacer hover */
+    border-color: #1e7e34;
+}
+
+.btn-ok:active {
+    background-color: #1e7e34; /* Verde más oscuro al hacer clic */
+    border-color: #1c7430;
+    box-shadow: none;
+}
+
+.agregaCopy{
+    background-color: #28a745;
+    padding: 10px 20px;
+    border:1px black dotted;
+    color:#fff;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    position:relative;
+}
+
+.containerImg img{
+    width:80px;
+}
+
+.popUp{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 350px;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-61%, -50%) scale(0.7);
+    opacity: 0;
+    transition: 2s ease all;
+}
+
+.popUp div h2{
+    text-align: center;
+    margin:0!important;
+}
+
+
+.text-area{
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #0A3871
+}
+    .text-area:focus{
+        outline: none;
+    }
+
+.text-mensaje{
+    background: white;
+    background-image: url(img/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #8A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+    .text-mensaje:focus {
+        outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-desencriptar{
+    background-color: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 18px;
+}
